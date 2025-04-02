@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Pomodoro Timer</string>
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="pause">PAUSE</string>
+    <string name="resume">RESUME</string>
+    <string name="history">History</string>
+    <string name="about_me">About Me</string>
+    <string name="pomodoro_failed">You failed your Pomodoro time!</string>
+    <string name="pomodoro_completed">Pomodoro completed successfully!</string>
+    <string name="minutes">minutes</string>
+    <string name="completed_on">Completed on</string>
+    <string name="app_name_title">Pomodoro Timer</string>
+    <string name="about_me_title">About Me</string>
+    <string name="history_title">History</string>
+    <string name="your_name">t2ne</string>
+    <string name="email">hi@t2ne.eu</string>
+    <string name="github">github.com/t2ne</string>
+    <string name="about_description">I am a passionate developer who loves creating useful applications. This Pomodoro Timer app helps you stay focused and productive.</string>
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="close_drawer">Close navigation drawer</string>
+    <string name="no_history">No Pomodoro sessions completed yet</string>
+</resources>
+
