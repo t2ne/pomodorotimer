@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Temporizador Pomodoro</string>
+    <string name="start">COMEÇAR</string>
+    <string name="stop">PARAR</string>
+    <string name="pause">PAUSAR</string>
+    <string name="resume">VOLTAR</string>
+    <string name="history">Histórico</string>
+    <string name="about_me">Sobre Mim</string>
+    <string name="pomodoro_failed">Falhaste o teu tempo em Pomodoro!</string>
+    <string name="pomodoro_completed">Pomodoro completado com sucesso!</string>
+    <string name="minutes">minutos</string>
+    <string name="completed_on">Completado em</string>
+    <string name="app_name_title">Temporizador Pomodoro</string>
+    <string name="about_me_title">Sobre Mim</string>
+    <string name="history_title">Histórico</string>
+    <string name="your_name">t2ne</string>
+    <string name="email">hi@t2ne.eu</string>
+    <string name="github">github.com/t2ne</string>
+    <string name="close_drawer">Fechar gaveta</string>
+    <string name="no_history">Nenhuma sessão completada até agora</string>
+    <string name="timer">Temporizador</string>
+    <string name="about_description">Sou um desenvolvedor entusiasmado por criar aplicações para o dia-a-dia. Esta aplicação de Pomodoro ajuda-te a manteres-te focado e produtivo.</string>
+    <string name="open_drawer">Abrir gaveta</string>
+</resources>

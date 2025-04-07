@@ -7,7 +7,6 @@ import androidx.lifecycle.ViewModel
 class TimerViewModel : ViewModel() {
 
     private val _timerDuration = MutableLiveData<Int>()
-    val timerDuration: LiveData<Int> = _timerDuration
 
     private val _isTimerRunning = MutableLiveData<Boolean>()
     val isTimerRunning: LiveData<Boolean> = _isTimerRunning

@@ -46,11 +46,7 @@ class TimerFragment : Fragment() {
 
             timerService?.isRunningLiveData?.observe(viewLifecycleOwner) { isRunning ->
                 updateButtonState(isRunning)
-                if (isRunning) {
-                    binding.circularSeekBar.isEnabled = false
-                } else {
-                    binding.circularSeekBar.isEnabled = true
-                }
+                binding.circularSeekBar.isEnabled = !isRunning
             }
 
             timerService?.isPausedLiveData?.observe(viewLifecycleOwner) { isPaused ->

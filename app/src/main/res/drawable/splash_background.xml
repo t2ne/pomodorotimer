@@ -2,7 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@color/teal_500" />
     <item
-        android:drawable="@drawable/ic_logo"
+        android:drawable="@drawable/baseline_access_time_24"
         android:gravity="center" />
 </layer-list>
 

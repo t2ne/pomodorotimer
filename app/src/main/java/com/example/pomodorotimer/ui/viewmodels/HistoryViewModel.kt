@@ -11,10 +11,10 @@ class HistoryViewModel(application: Application) : AndroidViewModel(application)
 
     private val repository: PomodoroRepository
     val allSessions: LiveData<List<PomodoroSession>>
-    val lastWeekSessions: LiveData<List<PomodoroSession>>
-    val completedSessionsCount: LiveData<Int>
-    val failedSessionsCount: LiveData<Int>
-    val totalCompletedTime: LiveData<Long>
+    private val lastWeekSessions: LiveData<List<PomodoroSession>>
+    private val completedSessionsCount: LiveData<Int>
+    private val failedSessionsCount: LiveData<Int>
+    private val totalCompletedTime: LiveData<Long>
 
     init {
         val pomodoroDao = PomodoroDatabase.getDatabase(application).pomodoroSessionDao()

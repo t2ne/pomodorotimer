@@ -20,8 +20,8 @@
 
             <ImageButton
                 android:id="@+id/btnBack"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/close_drawer"
                 android:src="@drawable/ic_back"
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/history_title"
                 android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/btnBack"

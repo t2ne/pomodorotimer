@@ -13,7 +13,6 @@ import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.Binder
-import android.os.Build
 import android.os.CountDownTimer
 import android.os.IBinder
 import androidx.core.app.NotificationCompat
@@ -81,24 +80,22 @@ class PomodoroTimerService : Service(), SensorEventListener {
     }
 
     private fun createNotificationChannel() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channelId = NOTIFICATION_CHANNEL_ID
-            val channelName = "Pomodoro Timer"
-            val channelDescription = "Notifications for Pomodoro Timer Service"
+        val channelId = NOTIFICATION_CHANNEL_ID
+        val channelName = "Pomodoro Timer"
+        val channelDescription = "Notifications for Pomodoro Timer Service"
 
-            val importance = NotificationManager.IMPORTANCE_LOW
-            val channel = NotificationChannel(channelId, channelName, importance).apply {
-                description = channelDescription
-            }
-
-            val notificationManager = getSystemService(NotificationManager::class.java)
-            notificationManager?.createNotificationChannel(channel)
+        val importance = NotificationManager.IMPORTANCE_LOW
+        val channel = NotificationChannel(channelId, channelName, importance).apply {
+            description = channelDescription
         }
+
+        val notificationManager = getSystemService(NotificationManager::class.java)
+        notificationManager?.createNotificationChannel(channel)
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         // Call startForeground() immediately to prevent timeout
-        startForeground(Constants.NOTIFICATION_ID, createNotification("Starting timer..."))
+        startForeground(NOTIFICATION_ID, createNotification("Starting timer..."))
 
         intent?.let {
             when (it.action) {
@@ -132,7 +129,7 @@ class PomodoroTimerService : Service(), SensorEventListener {
 
     private fun startForegroundService() {
         // Call startForeground() immediately
-        startForeground(Constants.NOTIFICATION_ID, createNotification("Timer is running..."))
+        startForeground(NOTIFICATION_ID, createNotification("Timer is running..."))
 
         isTimerRunning = true
         _isRunningLiveData.postValue(true)
@@ -156,7 +153,7 @@ class PomodoroTimerService : Service(), SensorEventListener {
             this, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE
         )
 
-        return NotificationCompat.Builder(this, Constants.NOTIFICATION_CHANNEL_ID)
+        return NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID)
             .setContentTitle("Pomodoro Timer")
             .setContentText(contentText)
             .setSmallIcon(R.drawable.ic_logo)
