@@ -12,6 +12,6 @@ object Constants {
 
     const val EXTRA_TIMER_DURATION = "EXTRA_TIMER_DURATION"
 
-    const val ACCELEROMETER_SENSITIVITY = 10.0f
+    const val ACCELEROMETER_SENSITIVITY = 10f
 }
 

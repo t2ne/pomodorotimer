@@ -49,7 +49,7 @@ class PomodoroTimerService : Service(), SensorEventListener {
     private var timeLeftMillis = 0L
     private var endTime = 0L
     private var timerStartTime = 0L
-    private val ACCELEROMETER_GRACE_PERIOD = 3000L // 3 seconds grace period
+    private val ACCELEROMETER_GRACE_PERIOD = 1500L // 3 seconds grace period
 
     private lateinit var timer: CountDownTimer
     private lateinit var repository: PomodoroRepository
